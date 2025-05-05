@@ -1,6 +1,9 @@
 
 ### TERCERA ENTREGRA ###
 #  Estudiante: Adrian Nicolas Estiven Rodriguez Leon
+print ("  ")
+print("18. Suma de 100 números")
+print(" ")
 numero = int(input("Ingresa un número entero: "))
 i = 1
 suma = 0
@@ -38,7 +41,6 @@ print(" ")
 print("21. Comparacion de dos numeros")
 print(" ")
 opcion = 1
-
 while opcion == 1:
     num1 = float(input("Ingresa el primer número: "))
     num2 = float(input("Ingresa el segundo número: "))
@@ -54,7 +56,26 @@ while opcion == 1:
     if opcion != 1:
         print("Cerrando Programa 'Comparador'...")
 print(" ")
+print("22. Numeros Impares")
+print(" ")
+numero2 = int(input("Ingresa un número entero: "))
 
+print("Números impares menores que ", numero2, ":")
+for i in range(1, numero2, 2):
+    print(i)
+print("Cerrando Programa 'Impares'...")
 
-
+print(" ")
+print("23. Algoritmo de Euclides")
+print(" ")
+opcion = 1
+while opcion == 1:
+    a = int(input("Ingresa el primer número: "))
+    b = int(input("Ingresa el segundo número: "))
+    original_a, original_b = a, b  
+    while b != 0:
+        a, b = b, a % b
+    print("El máximo común divisor de ", original_a, "y ", original_b, " es: ", a)
+    opcion = input("Escribe '1' si deseas calcular el MCD de otros  números: ")
+print("Cerrando Programa Eculides ...")
 
