@@ -19,5 +19,42 @@ while opcion == 1:
     print ( "los " , euros,  "euros equivalen a", dolar, "dólares.")
     opcion = int(input("¿Deseas convertir otra cantidad? escribe 1 si quieres continuar: "))
     if opcion != 1:
-       print("Opción no válida.")
+       print("Cerrando Programa 'Convertidor'... .")
+
+print(" ")
+print("20. Area de un rectángulo")
+print(" ")
+opcion = 1
+
+while opcion == 1:
+    altura = float(input("Ingresa la altura del rectángulo: "))
+    anchura = float(input("Ingresa la anchura del rectángulo: "))
+    area = altura * anchura
+    print("El área del rectángulo es: ", area)
+    opcion = input(" Escribe '1' si deseas calcular otravez el area del rectangulo: ")
+    if opcion != 1:
+        print("Cerrando Programa 'Area'...")
+print(" ")
+print("21. Comparacion de dos numeros")
+print(" ")
+opcion = 1
+
+while opcion == 1:
+    num1 = float(input("Ingresa el primer número: "))
+    num2 = float(input("Ingresa el segundo número: "))
+    if num1 > num2:
+        print("El mayor es: ",num1)
+        print("El menor es: ",num2)
+    if num2 > num1:
+        print("El mayor es:" ,num2)
+        print("El menor es: ", num1)
+    if num1 == num2:
+        print("Ambos números son iguales.")
+    opcion = int(input("Escribe '1' si deseas comparar otro par de números: "))
+    if opcion != 1:
+        print("Cerrando Programa 'Comparador'...")
+print(" ")
+
+
+
 
