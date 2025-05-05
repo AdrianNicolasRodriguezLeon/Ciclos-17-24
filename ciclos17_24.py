@@ -78,4 +78,30 @@ while opcion == 1:
     print("El máximo común divisor de ", original_a, "y ", original_b, " es: ", a)
     opcion = input("Escribe '1' si deseas calcular el MCD de otros  números: ")
 print("Cerrando Programa Eculides ...")
+print(" ")
+print("24. Ecuación cuadrática")
+print(" ")
+opcion = 1
+while opcion == 1:
+        a = float(input("Ingresa el coeficiente a diferente de 0): "))
+        if a != 0:
 
+            b = float(input("Ingresa el coeficiente b: "))
+            c = float(input("Ingresa el coeficiente c: "))
+
+            discriminante = b**2 - 4 * a * c
+
+            if discriminante > 0:
+                x1 = (-b + discriminante**0.5) / (2 * a)
+                x2 = (-b - discriminante**0.5) / (2 * a)
+                print("Dos soluciones reales: x1 = ", x1 , x2 )
+            if discriminante == 0:
+                x = -b / (2 * a)
+                print("Una única solución real: x = ", x)
+            if discriminante < 0:
+                print("No tiene soluciones reales.")
+                
+        else:
+            print("El coeficiente 'a' no puede ser 0 en una ecuación cuadrática.")
+
+        opcion = int(input(" Escribe '1' si deseas calcular otra ecuación cuadrática: "))
